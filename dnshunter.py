@@ -3,8 +3,6 @@
 # @real_slacker007
 # hunttools.org
 # cybersyndicates.com
-
-
 import pprint
 import subprocess as sp
 import socket
@@ -19,9 +17,6 @@ import hashlib
 import argparse
 from scapy.all import *
 from scapy.layers.dns import DNSQR, DNSRR, DNS
-#from __future__ import print_function
-
-
 '''
     Validate Dependencies & Install missing
 '''
@@ -41,8 +36,7 @@ except:
 def main(args):
     '''
     DNSPARSER.. Extracts information from pcaps to aid in network attack analysis
-    '''
-    
+    '''  
     gi = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
 
     if args.filename:
